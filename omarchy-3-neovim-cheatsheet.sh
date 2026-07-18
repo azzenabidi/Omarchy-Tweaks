@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Omarchy Neovim & Notion Keybindings Setup
-# Adds SUPER N → Neovim Cheatsheet, SUPER E → Neovim, SUPER SHIFT N → Notion
+# Omarchy Neovim Keybindings Setup
+# Adds SUPER N → Neovim Cheatsheet, SUPER E → Neovim
 
 set -e
 
@@ -66,8 +66,8 @@ cp "$BINDINGS_FILE" "$BINDINGS_FILE.bak.$(date +%s)"
 sed -i '/^bindd.*SUPER, N,/d' "$BINDINGS_FILE"
 sed -i '/^bindd.*SUPER, E,/d' "$BINDINGS_FILE"
 
-# Add new bindings after the SUPER SHIFT N / Notion section
-sed -i '/^bindd = SUPER SHIFT, N, Notion,/a\
+# Add new bindings
+sed -i '$a\
 # Neovim Cheatsheet on SUPER N\
 bindd = SUPER, N, Neovim Cheatsheet, exec, neovim-cheatsheet\
 # Neovim on SUPER E\
@@ -79,4 +79,3 @@ hyprctl reload
 echo "Done! Bindings:"
 echo "  SUPER N          → Neovim Cheatsheet"
 echo "  SUPER E          → Neovim"
-echo "  SUPER SHIFT N    → Notion"
