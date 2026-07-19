@@ -1,10 +1,17 @@
 # Omarchy-Tweaks
 
-Personal Omarchy tweaks and helper scripts for a fresh Omarchy 3 install.
+Personal Omarchy tweaks and helper scripts grouped by the Omarchy release they target.
+
+## Structure
+
+- [omarchy-3](omarchy-3): scripts for Omarchy 3.
+- [omarchy-4](omarchy-4): scripts for Omarchy 4 Alpha 
 
 ## Scripts
 
-### `omarchy-3-setup.sh`
+### Omarchy 3
+
+#### [omarchy-3/omarchy-3-setup.sh](omarchy-3/omarchy-3-setup.sh)
 
 Purpose:
 - Apply a personal Omarchy 3 setup on a fresh install.
@@ -13,8 +20,8 @@ Purpose:
 - Restart Waybar and reload Hyprland at the end.
 
 Usage:
-1. Make the script executable: `chmod +x omarchy-3-setup.sh`
-2. Run it on a fresh Omarchy 3 system: `./omarchy-3-setup.sh`
+1. Make the script executable: `chmod +x omarchy-3/omarchy-3-setup.sh`
+2. Run it on a fresh Omarchy 3 system: `./omarchy-3/omarchy-3-setup.sh`
 
 Notes:
 - This script expects Arch/Omarchy with `pacman` available.
@@ -40,22 +47,35 @@ Omarchy defaults changed:
 - Foot: custom terminal config importing theme, font, scrollback, cursor style, and clipboard key bindings.
 - Git: adds a user identity section if missing.
 
-### `omarchy-3-neovim-cheatsheet.sh`
+#### [omarchy-3/omarchy-3-neovim-cheatsheet.sh](omarchy-3/omarchy-3-neovim-cheatsheet.sh)
 
 Purpose:
 - Create a small Neovim cheatsheet helper script at `~/.local/bin/neovim-cheatsheet`.
 - Add Hyprland bindings for quick access to the cheatsheet and Neovim.
 
 Usage:
-1. Make the script executable: `chmod +x omarchy-3-neovim-cheatsheet.sh`
-2. Run it on Omarchy 3: `./omarchy-3-neovim-cheatsheet.sh`
+1. Make the script executable: `chmod +x omarchy-3/omarchy-3-neovim-cheatsheet.sh`
+2. Run it on Omarchy 3: `./omarchy-3/omarchy-3-neovim-cheatsheet.sh`
 
 Result:
 - Adds `SUPER N` to show the Neovim cheatsheet.
 - Adds `SUPER E` to launch Neovim.
 - Reloads Hyprland after updating the bindings.
 
+### Omarchy 4
+
+This script was taken from [https://github.com/basecamp/omarchy](the Omarchy repo)
+
+Purpose:
+- Upgrade from omarchy 3 to omarchy 4 alpha
+- Support the official Omarchy upgrade workflow with `--yes`, `--reboot`, `--dev`, and channel overrides.
+
+Usage:
+1. Run it directly at your own risk.`
+2. Follow the official Omarchy Discord Server  for updates.
+
 ## Summary
 
-- `omarchy-3-setup.sh`: full personal Omarchy 3 install/config bootstrap.
-- `omarchy-3-neovim-cheatsheet.sh`: Neovim cheatsheet and keybinding helper for Hyprland.
+- [omarchy-3/omarchy-3-setup.sh](omarchy-3/omarchy-3-setup.sh): full personal Omarchy 3 install/config bootstrap.
+- [omarchy-3/omarchy-3-neovim-cheatsheet.sh](omarchy-3/omarchy-3-neovim-cheatsheet.sh): Neovim cheatsheet and keybinding helper for Hyprland.
+- [omarchy-4/omarchy-upgrade-to-quattro](omarchy-4/omarchy-upgrade-to-quattro): upgrade helper for Omarchy 4 / Quattro.
