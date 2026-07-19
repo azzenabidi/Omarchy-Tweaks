@@ -64,7 +64,7 @@ Result:
 
 ### Omarchy 4
 
-This script was taken from [https://github.com/basecamp/omarchy](the Omarchy repo)
+This script was taken from [https://github.com/basecamp/omarchy] (the Omarchy repo)
 
 Purpose:
 - Upgrade from omarchy 3 to omarchy 4 alpha
