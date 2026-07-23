@@ -4,8 +4,10 @@ Personal Omarchy tweaks and helper scripts grouped by the Omarchy release they t
 
 ## Structure
 
-- [omarchy-3](omarchy-3): scripts for Omarchy 3.
-- [omarchy-4](omarchy-4): scripts for Omarchy 4 Alpha 
+- [omarchy-3](omarchy-3): scripts and personal Omarchy 3 configuration.
+- [omarchy-3/hypr](omarchy-3/hypr): custom Hyprland configuration files for Omarchy 3.
+- [omarchy-3/waybar](omarchy-3/waybar): custom Waybar configuration and styling.
+- [omarchy-4](omarchy-4): Omarchy 4 / Quattro upgrade helper.
 
 ## Scripts
 
@@ -17,6 +19,7 @@ Purpose:
 - Apply a personal Omarchy 3 setup on a fresh install.
 - Install packages from the official repos and AUR.
 - Configure Hyprland keybindings, monitors, input layouts, Waybar, Alacritty, Foot, and Git.
+- Write user-local `~/.config/hypr` and `~/.config/waybar` config files.
 - Restart Waybar and reload Hyprland at the end.
 
 Usage:
@@ -35,7 +38,7 @@ Before you run:
 - Verify `~/.local/bin` is in your `PATH` for the Neovim cheatsheet helper.
 
 Installed packages:
-- Official repos: `vlc`, `vlc-plugins-all`, `fuse2`, `flatpak`, `virtualbox`, `virtualbox-host-modules-arch`, `transmission-gtk`
+- Official repos: `vlc`, `vlc-plugins-all`, `fuse2`, `flatpak`, `virtualbox`, `virtualbox-host-modules-arch`, `transmission-gtk`, `aria2`
 - AUR: `google-chrome`, `virtualbox-ext-oracle`
 
 Omarchy defaults changed:
@@ -64,15 +67,16 @@ Result:
 
 ### Omarchy 4
 
-This script was taken from [the official repo](https://github.com/basecamp/omarchy)
+This script was taken from [the official repo](https://github.com/basecamp/omarchy).
 
 Purpose:
-- Upgrade from omarchy 3 to omarchy 4 alpha
+- Upgrade from Omarchy 3 to the package-backed Omarchy quattro layout.
 - Support the official Omarchy upgrade workflow with `--yes`, `--reboot`, `--dev`, and channel overrides.
 
 Usage:
-1. Run it directly at your own risk.`
-2. Follow the official Omarchy Discord Server  for updates.
+1. Make the script executable if needed: `chmod +x omarchy-4/omarchy-upgrade-to-quattro`
+2. Run it at your own risk: `./omarchy-4/omarchy-upgrade-to-quattro`
+3. Follow official Omarchy updates and channels for stable/rc/edge support.
 
 ## Summary
 
